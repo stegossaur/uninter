@@ -11,7 +11,6 @@
 
     <div class="container">
         <ul id="nav-links" class="nav-links">
-            <li class="link"><a href="index.html">Início</a></li>
             <li class="link"><a href="#sobre">Sobre mim</a></li>
             <li class="link"><a href="#formacao">Formação</a></li>
             <li class="link"><a href="#portfolio">Portfólio</a></li>
@@ -19,68 +18,87 @@
         </ul>
 
         <div class="sobre" id="sobre">
+            <div class="rajado-bg fade-delay"></div>
+            <div class="rajado-bg fade-in"></div>
+            <div class="rajado-bg fade-in"></div>
+
+
             <div class="header">
-                <h1>STEFANY <span>TIEPO</span></h1>
+                <div class="left">
+                    <img src="/static/img/image.png" class="image fade-in">
+                </div>
+                <div class="right">
+                    <h1 class="fade-in-left">STEFANY <span class="fade-delay">TIEPO</span></h1>
+                    <div class="descricao fade-in">
+                        <h2>Dev Junior</h2>
+                        <p>Sou estudante de Engenharia de Software e apaixonada por tecnologia.</p>
+                        <p>Atualmente, estou focada em aprimorar minhas habilidades em desenvolvimento web, principalmente no frontend.</p>
+                    </div>
+                </div>
             </div>
-            <div class="descricao">
-                <i class="ri-mac-fill"></i>
-                <h2>Desenvolvedora de Software Junior</h2>
-            </div>
-            <p>Sou estudante de Engenharia de Software e apaixonada por tecnologia.</p>
-            <p>Estou sempre em busca de aprender e me desenvolver na área de programação.</p>
-            <p>Atualmente, estou focada em aprimorar minhas habilidades em desenvolvimento web, principalmente no frontend.</p>
-            <div class="iniciar">
+            <a href="#formacao" class="iniciar fade-delay">
                 <p>Conheça um pouco da minha trajetória e do meu trabalho</p>
                 <i class="ri-arrow-down-line"></i>
-            </div>
+            </a>
         </div>
 
-        <div id="formacao" class="formacao">
-            <div class="card">
-                <div class="card-header">
-                    <i class="ri-tools-line"></i>
-                    <span>TÉC. INFORMÁTICA</span>
-                </div>
-                <div class="card-body">
-                    <p>IFSul - Câmpus Venâncio Aires </p>
-                    <p>2019 - 2023</p>
-                </div>                
-            </div>
+        <div class="divide"></div>
 
-            <div class="card">
-                <div class="card-header">
-                    <i class="ri-settings-2-line"></i>
-                    ENGENHARIA DE SOFTWARE
+        <div id="formacao" class="formacao fade-in">
+            <h1 class="fade-in">FORMAÇÃO ACADÊMICA</h1>
+            <div class="formacao-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="ri-tools-line"></i>
+                        <span>TÉCNICO EM INFORMÁTICA</span>
+                    </div>
+                    <div class="card-body">
+                        <p>IFSul - Câmpus Venâncio Aires </p>
+                        <p>2019 - 2023</p>
+                    </div>                
                 </div>
-                <div class="card-body">
-                    <p>UNINTER</p>
-                    <p>2023 - Atualmente</p>
+    
+                <div class="card">
+                    <div class="card-header">
+                        <i class="ri-settings-2-line"></i>
+                        ENGENHARIA DE SOFTWARE
+                    </div>
+                    <div class="card-body">
+                        <p>UNINTER</p>
+                        <p>2023 - Atualmente</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <i class="ri-global-line"></i>IDIOMA
+    
+                <div class="card">
+                    <div class="card-header">
+                        <i class="ri-global-line"></i>IDIOMA
+                    </div>
+                    <div class="card-body">
+                        <p>Inglês fluente</p>
+                        <p>Escola Idioma - Língua e Cultura</p>
+                        <p>2012 - 2017</p>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>Inglês fluente</p>
-                    <p>Escola Idioma - Língua e Cultura</p>
-                    <p>2012 - 2017</p>
-                </div>
-            </div>
+            </div>            
         </div>
+
+        <div class="divide2"></div>
 
         <div id="portfolio" class="portfolio">
+            <h1>PORTFÓLIO</h1>
+            <span>Comecei minha jornada em 2019 com desenvolvimento Java e hoje atuo principalmente com desenvolvimento web como desenvolvedora Fullstack Junior</span>
             <ul>
-                <li> Link 1</li>
-                <li> Link 2</li>
-                <li> Link 3</li>
-                <li> Link 4</li>
+                <li> Um dos meus projetos iniciais</li>
+                <li> Um projeto do meio da trajetória</li>
+                <li> último projeto profissional</li>
             </ul>
         </div>
 
+        <div class="divide"></div>
+
         <div id="contato" class="contato">
-            <form action="aaa">
+            <span>Interessado? <br> Entre em contato comigo e podemos trocar uma ideia! </span>
+            <form action="enviar">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required>
                 <label for="email">Email</label>
@@ -90,9 +108,7 @@
                 <button type="submit">Enviar</button>
             </form>
         </div>
-
-
     </div>
-    
+    <script src="/static/script.js"></script>
 </body>
 </html>
