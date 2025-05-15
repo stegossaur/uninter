@@ -195,6 +195,8 @@ a {
 
 .iniciar {
     display: flex;
+    margin: 0 auto;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     margin-top: 6rem;
@@ -239,13 +241,12 @@ a {
     padding-top: 3rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    align-items: center;
 }
 
 .formacao-cards{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -261,10 +262,11 @@ body h1{
 .formacao .card{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #fff;
     width: 300px;
-    height: 400px;
+    max-height: 600px;
+    height: fit-content;
     border: 1.5px solid transparent;
     border-radius: 1rem;
     background-color: rgb(31, 31, 31);
@@ -275,9 +277,7 @@ body h1{
 .formacao .card-header{
     display: flex;
     align-items: center;
-    text-align: center;
-    font-size: 1.4rem;
-    align-items: start;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px dashed whitesmoke;
@@ -293,9 +293,14 @@ body h1{
 
 .formacao .card-body {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    height: 100%;
     gap: 1rem;
     flex-direction: column;
+}
+
+.formacao .card-body p {
+    height: 100%;
 }
 
 .formacao .card:hover{
@@ -347,6 +352,11 @@ body h1{
     transform: translate(0px, -5px);
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.portfolio a {
+    width: 100%;
+    color: #181818;
 }
 
 .portfolio li::before {
@@ -406,4 +416,13 @@ form button{
 
 form button:hover{
     background-color: #351ba8;
+}
+
+.descricao {
+    transition: transform 0.5s ease, scale 0.5s ease;
+    transform: scale(1); /* padrão */
+}
+
+.descricao.expandida {
+    transform: scale(1.1); /* aumenta um pouco */
 }

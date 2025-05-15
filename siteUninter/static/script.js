@@ -26,8 +26,21 @@ function handleScroll() {
     });
 }
 
-
 // Detecta scroll e rola a tela suavemente
 window.addEventListener('scroll', handleScroll);
 // Verifica os elementos no carregamento da página
 document.addEventListener('DOMContentLoaded', handleScroll);
+
+document.getElementById("sobre-link").addEventListener("click", function(e) {
+    e.preventDefault(); // Impede a rolagem
+
+    const descricao = document.getElementById("descricao");
+
+    // Adiciona a classe que aumenta
+    descricao.classList.add("expandida");
+
+    // Espera 3 segundos e remove a classe para voltar ao tamanho normal
+    setTimeout(() => {
+        descricao.classList.remove("expandida");
+    }, 2000); // tempo em milissegundos
+});
